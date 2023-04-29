@@ -86,11 +86,11 @@
 
 <div class="wrap">
 	<div class="sidebarwrap">
-		<a href="/" on:mouseenter={() => setFadingTo("name")}>CoasterFan5</a>
+		<a href="./" on:mouseenter={() => setFadingTo("name")}>CoasterFan5</a>
 		<hr>
-		<a href="/about" on:mouseenter={() => setFadingTo("about")}>About</a>
-		<a href="/projects" on:mouseenter={() => setFadingTo("projects")}>Projects</a>
-		<a href="/contact" on:mouseenter={() => setFadingTo("contact")}>Contact</a>
+		<a href="./about" on:mouseenter={() => setFadingTo("about")}>About</a>
+		<a href="./projects" on:mouseenter={() => setFadingTo("projects")}>Projects</a>
+		<a href="./contact" on:mouseenter={() => setFadingTo("contact")}>Contact</a>
 	</div>
 	<div class="dotHolder" bind:clientHeight={canvasHeight} bind:clientWidth={canvasWidth}>
 		<canvas bind:this={canvas}> 

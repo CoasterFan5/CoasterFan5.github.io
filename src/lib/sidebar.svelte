@@ -1,10 +1,10 @@
 
 <div class="sidebarwrap">
-	<a href="/">CoasterFan5</a>
+	<a href="./">CoasterFan5</a>
 	<hr>
-	<a href="/about">About</a>
-	<a href="/projects">Projects</a>
-	<a href="/contact">Contact</a>
+	<a href="./about">About</a>
+	<a href="./projects">Projects</a>
+	<a href="./contact">Contact</a>
 </div>
 
 
