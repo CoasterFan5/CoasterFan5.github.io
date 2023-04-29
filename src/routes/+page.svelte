@@ -29,7 +29,7 @@
 	onMount(() => {
 		setInterval(() => {
 			fadeCanvas();
-		}, 1000/frameRate)
+		}, 1000/60)
 		if(!canvas) return;
 		ctx = canvas.getContext("2d");
 	})
@@ -61,15 +61,15 @@
 			}
 			
 			dot.opacity += (positions[fadingTo][index].opacity - dot.opacity)/10;
-			dot.x += ((positions[fadingTo][index].x) - dot.x)/frameRate;
-			dot.y += ((positions[fadingTo][index].y) - dot.y)/frameRate;
+			dot.x += ((positions[fadingTo][index].x) - dot.x)/12;
+			dot.y += ((positions[fadingTo][index].y) - dot.y)/12;
 			//add variation of 5-10 px to the position
 			
 			//draw the dot
 			ctx.fillStyle = `rgba(5, 129, 232, ${dot.opacity})`;
 			ctx.global = dot.opacity;
-			let dotx = dot.x * xstep + bottomx;
-			let doty = dot.y * ystep + bottomy;
+			let dotx = dot.x * xstep + bottomx + Math.floor(Math.random());
+			let doty = dot.y * ystep + bottomy + Math.floor(Math.random());;
 			ctx.moveTo(dotx, doty);
 			ctx.arc(dotx, doty, 5, 0, 2*Math.PI);
 		})
