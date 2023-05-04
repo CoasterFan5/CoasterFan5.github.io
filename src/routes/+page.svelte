@@ -42,7 +42,7 @@
 	let fadeCanvas = () => {
 
 		//fade colors
-		let rgbsfactor = 0.2;
+		let rgbsfactor = 0.5;
 		switch(rgbs) {
 			case 0: //255, i, 0
 				g += rgbsfactor;
@@ -107,10 +107,11 @@
 				positions[fadingTo].push(newDot);
 			}
 			
-			dot.opacity += (positions[fadingTo][index].opacity - dot.opacity)/10;
 			dot.x += ((positions[fadingTo][index].x) - dot.x)/12;
 			dot.y += ((positions[fadingTo][index].y) - dot.y)/12;
 			//add variation of 5-10 px to the position
+			dot.x += Math.random() *0.05
+			dot.y += Math.random() *0.05 
 			
 			//draw the dot
 			ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${dot.opacity})`;
@@ -120,6 +121,7 @@
 			ctx.moveTo(dotx, doty);
 			ctx.arc(dotx, doty, 5, 0, 2*Math.PI);
 		})
+		//randomly switch a few dots
 		ctx.fill();
 	}
 
