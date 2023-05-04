@@ -119,7 +119,7 @@
 			let dotx = dot.x * xstep + bottomx + Math.floor(Math.random());
 			let doty = dot.y * ystep + bottomy + Math.floor(Math.random());;
 			ctx.moveTo(dotx, doty);
-			ctx.arc(dotx, doty, 5, 0, 2*Math.PI);
+			ctx.arc(dotx, doty, squareRadius/100, 0, 2*Math.PI);
 		})
 		//randomly switch a few dots
 		ctx.fill();
@@ -175,7 +175,7 @@
 		height: 100vh;
 		width: 200px;
 		text-align: center;
-		background: rgba(0, 0, 0, 0.2);
+		background: rgba(13, 13, 13, 1);
 	}
 	.sidebarwrap hr {
 		width: 70%;
