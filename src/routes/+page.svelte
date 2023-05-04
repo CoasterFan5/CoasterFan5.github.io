@@ -16,6 +16,11 @@
 	let ctx;
 	let frameRate = 60;
 
+	let rgbs = 3;
+	let r = 0;
+	let g = 255;
+	let b = 255;
+
 	$: trueCanvasHeight = canvasHeight;
 	$: trueCanvasWidth = canvasWidth;
 	$: squareRadius = Math.floor(Math.min(canvasWidth/2, canvasHeight/2));
@@ -35,6 +40,48 @@
 	})
 	
 	let fadeCanvas = () => {
+
+		//fade colors
+		let rgbsfactor = 0.2;
+		switch(rgbs) {
+			case 0: //255, i, 0
+				g += rgbsfactor;
+				if(g >= 255) {
+					rgbs++;
+				}
+				break;
+			case 1: //d, 255, 0
+				r -= rgbsfactor;
+				if(r <= 0) {
+					rgbs++;
+				}
+				break;
+			case 2: //0, 255, i
+				b += rgbsfactor;
+				if(b >= 255) {
+					rgbs++;
+				}
+				break;
+			case 3: //0, d, 255
+				g -= rgbsfactor;
+				if(g <= 0) {
+					rgbs++;
+				}
+				break;
+			case 4: //i, 0, 255
+				r += rgbsfactor;
+				if(r >= 255) {
+					rgbs++;
+				}
+				break;
+			case 5: //255, 0, d
+				b -= rgbsfactor;
+				if(b <= 0) {
+					rgbs = 0;
+				}
+				break;
+
+		}
 
 
 		if(!canvas || !ctx) return;
@@ -66,7 +113,7 @@
 			//add variation of 5-10 px to the position
 			
 			//draw the dot
-			ctx.fillStyle = `rgba(5, 129, 232, ${dot.opacity})`;
+			ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${dot.opacity})`;
 			ctx.global = dot.opacity;
 			let dotx = dot.x * xstep + bottomx + Math.floor(Math.random());
 			let doty = dot.y * ystep + bottomy + Math.floor(Math.random());;
@@ -84,7 +131,7 @@
 
 
 
-<div class="wrap">
+<div class="wrap" style="--color: rgb({r}, {g}, {b})">
 	<div class="sidebarwrap">
 		<a href="./" on:mouseenter={() => setFadingTo("name")}>CoasterFan5</a>
 		<hr>
@@ -113,10 +160,10 @@
 		flex-grow: 2;
 		height: 100%;
 		display: flex;
-		background: rgba(255, 255, 255, 0.1);
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background: rgb(29, 29, 29);
 	}
 	.sidebarwrap {
 		display: flex;
@@ -126,7 +173,7 @@
 		height: 100vh;
 		width: 200px;
 		text-align: center;
-		background: rgba(0, 0, 0, 0.1);
+		background: rgba(0, 0, 0, 0.2);
 	}
 	.sidebarwrap hr {
 		width: 70%;
@@ -136,7 +183,7 @@
 	}
 	.sidebarwrap a {
 		text-decoration: none;
-		background-image: linear-gradient(90deg, #0581E8 75%, white 50%);
+		background-image: linear-gradient(90deg, var(--color) 75%, white 50%);
 		background-position: 100%;
 		background-size: 400%;
 		background-clip: text;
@@ -148,7 +195,7 @@
 	}
 	.sidebarwrap a:hover {
 		text-decoration: none;
-		background-image: linear-gradient(90deg, #0581E8 75%, white 50%);
+		background-image: linear-gradient(90deg, var(--color) 75%, white 50%);
 		background-position: 0%;
 		background-size: 400%;
 		

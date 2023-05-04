@@ -19,7 +19,7 @@
 		height: 100vh;
 		width: 200px;
 		text-align: center;
-		background: rgba(0, 0, 0, 0.1);
+		background: rgba(13, 13, 13, 1);
 	}
 	.sidebarwrap hr {
 		width: 70%;
