@@ -1,5 +1,4 @@
 <script>
-	import Sidebar from "$lib/sidebar.svelte";
 	import { positions } from "$lib/positions.js";
 	import { onMount } from "svelte";
 
