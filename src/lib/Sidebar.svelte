@@ -19,7 +19,8 @@
 		height: 100vh;
 		width: 200px;
 		text-align: center;
-		background: rgba(13, 13, 13, 1);
+		background: rgba(13, 13, 13, 0.5);
+		backdrop-filter: blur(5px);	
 	}
 	.sidebarwrap hr {
 		width: 70%;
