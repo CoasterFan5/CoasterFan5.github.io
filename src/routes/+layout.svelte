@@ -1,13 +1,17 @@
-<slot/>
+<script lang="ts">
+	// Supports weights 200-800
+	import '@fontsource-variable/manrope';
+</script>
 
-<style>
+<slot />
+
+<style lang="scss">
 	:global(body) {
 		margin: 0;
-		padding: 0;
-		font-family: sans-serif;
-		background: #f1f1f1;
-	}
-	:global(html) {
-		scroll-behavior:smooth
+		height: 100vh;
+		width: 100%;
+		overflow-y: auto;
+		color: #ffffff;
+		font-family: manrope, sans-serif;
 	}
 </style>
