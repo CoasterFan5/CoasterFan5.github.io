@@ -37,6 +37,7 @@
 		"@iconify-json/bxl": "^1.2.0",
 		"@iconify-json/flowbite": "^1.2.0",
 		"@sveltejs/adapter-node": "^5.0.1",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"sass": "^1.79.4",
 		"scss": "^0.2.4"
 	}

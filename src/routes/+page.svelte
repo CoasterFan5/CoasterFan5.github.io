@@ -16,7 +16,7 @@
 				<a class="projectLink" href="https://github.com/coasterfan5/currency-translator"
 					>Currency Translator</a
 				>
-				<a class="projectLink" href="#_blank">Coming Soon</a>
+				<a class="projectLink" href="#">Coming Soon</a>
 			</div>
 			<!-- <hr />
 			<div class="section">
