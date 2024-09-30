@@ -3,6 +3,7 @@
 	import '@fontsource-variable/manrope';
 </script>
 
+<title>CoasterFan5</title>
 <slot />
 
 <style lang="scss">
