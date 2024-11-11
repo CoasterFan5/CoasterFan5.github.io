@@ -12,8 +12,8 @@
 		<div class="sections">
 			<div class="section">
 				<h3>Projects</h3>
-				<a class="projectLink" href="https://github.com/coasterfan5/clubsaurus">Clubsaurus</a>
-				<a class="projectLink" href="https://github.com/coasterfan5/currency-translator"
+				<a class="projectLink" href="https://github.com/CoasterFan5/clubsaurus">Clubsaurus</a>
+				<a class="projectLink" href="https://github.com/CoasterFan5/currency-translator-bot"
 					>Currency Translator</a
 				>
 				<a class="projectLink" href="#">Coming Soon</a>
