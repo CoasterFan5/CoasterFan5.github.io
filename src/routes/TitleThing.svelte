@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let value = 'CoasterFan5';
-	let arr = value.split('');
 </script>
 
 <div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Supports weights 200-800
 	import '@fontsource-variable/manrope';
 </script>
 
