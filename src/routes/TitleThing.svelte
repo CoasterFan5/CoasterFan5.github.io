@@ -1,12 +1,5 @@
-<script lang="ts">
-	export let value = 'CoasterFan5';
-	let arr = value.split('');
-</script>
-
 <div>
-	<h2>
-		{value}
-	</h2>
+	<h2>CoasterFan5</h2>
 </div>
 
 <style lang="scss">

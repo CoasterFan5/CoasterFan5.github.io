@@ -6,31 +6,16 @@
 </script>
 
 <div class="bg">
-	<div class="bgCover" />
+	<div class="bgCover"></div>
 	<div class="content">
 		<TitleThing />
 		<div class="sections">
 			<div class="section">
 				<h3>Projects</h3>
 				<a class="projectLink" href="https://github.com/CoasterFan5/clubsaurus">Clubsaurus</a>
-				<a class="projectLink" href="https://github.com/CoasterFan5/currency-translator-bot"
-					>Currency Translator</a
-				>
-				<a class="projectLink" href="#">Coming Soon</a>
+				<a class="projectLink" href="https://penylo.dev">Penylo</a>
+				<a class="projectLink" href="##">Coming Soon</a>
 			</div>
-			<!-- <hr />
-			<div class="section">
-				<h3>Tools</h3>
-				<a class="projectLink" href="https://svelte.dev">Svelte</a>
-				<a class="projectLink" href="https://typescriptlang.org">Typescript</a>
-				<a class="projectLink" href="https://prisma.io">Prisma</a>
-			</div>
-			<hr />
-			<div class="section">
-				<h3>Experience</h3>
-				<a class="projectLink" href="#_blank">Fairmyer</a>
-				<a class="projectLink" href="https://aermor.com">Aermor</a>
-			</div> -->
 		</div>
 	</div>
 	<div class="socials">
@@ -157,9 +142,5 @@
 		align-items: center;
 		justify-content: start;
 		padding: 0 2rem;
-	}
-
-	hr {
-		opacity: 0.1;
 	}
 </style>

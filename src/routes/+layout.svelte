@@ -1,10 +1,16 @@
 <script lang="ts">
-	// Supports weights 200-800
 	import '@fontsource-variable/manrope';
+	import type { Snippet } from 'svelte';
+
+	let {
+		children
+	}: {
+		children: Snippet<[]>;
+	} = $props();
 </script>
 
 <title>CoasterFan5</title>
-<slot />
+{@render children?.()}
 
 <style lang="scss">
 	:global(body) {
