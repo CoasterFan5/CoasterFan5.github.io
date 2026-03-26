@@ -14,7 +14,7 @@
 				<h3>Projects</h3>
 				<a class="projectLink" href="https://github.com/CoasterFan5/clubsaurus">Clubsaurus</a>
 				<a class="projectLink" href="https://penylo.dev">Penylo</a>
-				<a class="projectLink" href="##">Coming Soon</a>
+				<a class="projectLink" href="/">Coming Soon</a>
 			</div>
 		</div>
 	</div>
