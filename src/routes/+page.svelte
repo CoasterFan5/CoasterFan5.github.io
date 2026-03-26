@@ -6,7 +6,7 @@
 </script>
 
 <div class="bg">
-	<div class="bgCover" />
+	<div class="bgCover"></div>
 	<div class="content">
 		<TitleThing />
 		<div class="sections">

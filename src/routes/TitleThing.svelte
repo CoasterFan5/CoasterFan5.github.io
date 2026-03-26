@@ -1,11 +1,5 @@
-<script lang="ts">
-	export let value = 'CoasterFan5';
-</script>
-
 <div>
-	<h2>
-		{value}
-	</h2>
+	<h2>CoasterFan5</h2>
 </div>
 
 <style lang="scss">
